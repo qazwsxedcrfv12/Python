@@ -1,0 +1,32 @@
+import random as ran
+
+lst=['s','w','g']
+#s-snake,w-water,g-gun
+i=0
+c=0
+u=0
+while(i<10):
+    x=input("Enter your choices:\nChoices available are s,w,g")
+    y=ran.choice(lst)
+    if x=='s' and y=='w':
+        print("User wins")
+        u+=1;
+    elif x=='w' and y=='s':
+        print("Computer wins")
+        c+=1;
+    elif x=='s' and y=='g':
+        print("Computer wins")
+        c+=1;
+    elif x=='g' and y=='s':
+        print("User wins")
+        u+=1;
+    elif x=='g' and y=='w':
+        print("Computer wins")
+        c+=1;
+    else:
+        print("User wins")
+        u+=1;
+    i+=1;
+    
+print("User wins "+str(u)+" times.")
+print("Computer "+str(c)+" times.")
