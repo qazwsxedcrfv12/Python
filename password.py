@@ -1,5 +1,6 @@
                          #Password generator in Python
-import random
+  
+  import random
 
 lower = "abcdefghijklmnopqrstuvwxyz"
 upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
